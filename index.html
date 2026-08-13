@@ -1,318 +1,378 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>简历</title>
-    <link rel="stylesheet" href="./css/iconfont/iconfont.css">
-    <style type="text/css">
-        *{
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        #wrapper{
-            width: 996px;
-            margin: 0 auto;
-        }
-        .top-wrap{
-            width: 996px;
-            background-color: #2d3e50;
-            margin: 0 auto;
-        }
-        .top-wrapmain{
-            height: 158px;
-            color: #fff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .left{
-            margin-left: 58px;
-        }
-        .right{
-            margin-right: 105px;
-        }
-        .info-wraper{
-            margin-top: 38px;
-            color: #fff;
-            font-size: 20px;
-            letter-spacing: 10px;
-        }
-        .info-wraper, .left-tx{
-            width: 282px;
-            height: 49px;
-            line-height: 49px;
-            text-align: center;
-            border: 1px solid transparent;
-            background: linear-gradient(90deg,transparent 0px ,#2d3e50 0px) 0px 0px,
-                        linear-gradient(-135deg,transparent 26%,#2d3e50 26%) 100% 0px;
-            background-size: 51% 100%;
-            background-repeat: no-repeat;
-        }
-        .info-wraper .right-tx{
-            margin-left: 282px;
-            margin-top: -51px;
-            width: 441px;
-            height: 49px;
-            border: 1px solid transparent;
-            background: linear-gradient(405deg,transparent 18%,#e5e7e8 18%) 0px 0px,
-                        linear-gradient(-90deg,transparent 0,#e5e7e8 0) 100% 0;
-            background-repeat: no-repeat;
-            background-size: 51% 100%;
-        }
-        .base-info{
-            width: 727px;
-            margin: 0 50px;
-        }
-        .base-info li{
-            color: black;
-        }
-        .base-info .r li{
-            float: left;
-            margin-right: 150px;
-        }
-        .base-info .l li{
-            float: left;
-            margin-right: 150px;
-        }
-        .item-experience{
-            margin-top: 130px;
-            color: #fff;
-            font-size: 20px;
-            letter-spacing: 10px;
-        }
-        .img{
-            float: right;
-            margin-right: 64px;
-            margin-top: -150px;
-        }
-        .experience{
-            color: black;
-            letter-spacing: 5px;
-            line-height: 50px;
-            margin: 0 50px;
-        }
-        .item-experience .left-tx{
-            width: 282px;
-            height: 49px;
-            text-align: center;
-            border: 1px solid transparent;
-            background: linear-gradient(90deg,transparent 0px ,#2d3e50 0px) 0px 0px,
-            linear-gradient(-135deg,transparent 26%,#2d3e50 26%) 100% 0px;
-            background-size: 51% 100%;
-            background-repeat: no-repeat;
-        }
-        .item-experience .right-tx{
-            margin-left: 282px;
-            margin-top: -51px;
-            width: 441px;
-            height: 49px;
-            border: 1px solid transparent;
-            background: linear-gradient(405deg,transparent 18%,#e5e7e8 18%) 0px 0px,
-            linear-gradient(-90deg,transparent 0,#e5e7e8 0) 100% 0;
-            background-repeat: no-repeat;
-            background-size: 51% 100%;
-        }
-        .art-wrapper{
-            margin-top: 40px;
-            color: #fff;
-            font-size: 20px;
-            letter-spacing: 10px;
-        }
-        .art-wrapper .left-tx{
-            width: 282px;
-            height: 49px;
-            text-align: center;
-            border: 1px solid transparent;
-            background: linear-gradient(90deg,transparent 0px ,#2d3e50 0px) 0px 0px,
-            linear-gradient(-135deg,transparent 26%,#2d3e50 26%) 100% 0px;
-            background-size: 51% 100%;
-            background-repeat: no-repeat;
-        }
-        .art-wrapper .right-tx{
-            margin-left: 250px;
-            margin-top: -51px;
-            width: 741px;
-            height: 49px;
-            border: 1px solid transparent;
-            background: linear-gradient(405deg,transparent 18%,#e5e7e8 18%) 0px 0px,
-            linear-gradient(-90deg,transparent 0,#e5e7e8 0) 100% 0;
-            background-repeat: no-repeat;
-            background-size: 51% 100%;
-        }
-        .art{
-            color: black;
-            letter-spacing: 5px;
-            line-height: 50px;
-            margin: 0 50px;
-        }
-        .art i{
-            font-size: 30px;
-            font-weight: bolder;
-        }
-        .evaluate-wrapper{
-            margin-top: 40px;
-            color: #fff;
-            font-size: 20px;
-            letter-spacing: 10px;
-        }
-        .evaluate-wrapper .left-tx{
-            width: 282px;
-            height: 49px;
-            text-align: center;
-            border: 1px solid transparent;
-            background: linear-gradient(90deg,transparent 0px ,#2d3e50 0px) 0px 0px,
-            linear-gradient(-135deg,transparent 26%,#2d3e50 26%) 100% 0px;
-            background-size: 51% 100%;
-            background-repeat: no-repeat;
-        }
-        .evaluate-wrapper .right-tx{
-            margin-left: 250px;
-            margin-top: -51px;
-            width: 741px;
-            height: 49px;
-            border: 1px solid transparent;
-            background: linear-gradient(405deg,transparent 18%,#e5e7e8 18%) 0px 0px,
-            linear-gradient(-90deg,transparent 0,#e5e7e8 0) 100% 0;
-            background-repeat: no-repeat;
-            background-size: 51% 100%;
-        }
-        .evaluate{
-            color: black;
-            letter-spacing: 5px;
-            line-height: 50px;
-            margin: 0 50px;
-        }
-        .bottom{
-            margin-top: 40px;
-            width: 996px;
-            height: 29px;
-            background-color:#2d3e50;
-        }
+    <title>个人介绍与技术接单简介 | Portfolio & Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background-color: #ffffff; color: #0f172a; line-height: 1.6; padding-bottom: 60px; }
+        .top-bar { position: sticky; top: 0; z-index: 100; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid #e2e8f0; padding: 14px 28px; display: flex; justify-content: space-between; align-items: center; }
+        .brand { font-size: 1.15rem; font-weight: 800; color: #0f172a; display: flex; align-items: center; gap: 10px; }
+        .brand-badge { background: #2563eb; color: #ffffff; font-size: 0.75rem; padding: 2px 8px; border-radius: 9999px; font-weight: 600; }
+        .lang-switch { display: flex; background: #f1f5f9; padding: 3px; border-radius: 8px; border: 1px solid #cbd5e1; }
+        .lang-btn { border: none; background: transparent; padding: 6px 14px; border-radius: 6px; font-size: 0.875rem; font-weight: 600; cursor: pointer; color: #64748b; transition: all 0.2s ease; }
+        .lang-btn.active { background: #ffffff; color: #2563eb; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .container { max-width: 980px; margin: 32px auto; padding: 0 20px; }
+        .hero { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 40px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); }
+        .hero h1 { font-size: 2.1rem; font-weight: 800; color: #0f172a; margin-bottom: 14px; }
+        .hero p { font-size: 1.05rem; color: #334155; }
+        .section-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 32px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); }
+        .section-title { font-size: 1.35rem; font-weight: 700; color: #0f172a; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid #f1f5f9; display: flex; align-items: center; gap: 10px; }
+        .tech-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+        .tech-item { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 18px; }
+        .tech-item h4 { font-size: 1rem; font-weight: 700; color: #0f172a; margin-bottom: 10px; }
+        .tech-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+        .tag { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; font-size: 0.8rem; padding: 3px 9px; border-radius: 6px; font-weight: 500; }
+        .project-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; margin-bottom: 18px; transition: border-color 0.2s ease, box-shadow 0.2s ease; }
+        .project-card:hover { border-color: #93c5fd; box-shadow: 0 4px 12px rgba(37,99,235,0.06); }
+        .project-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; flex-wrap: wrap; gap: 8px; }
+        .project-title { font-size: 1.12rem; font-weight: 700; color: #0f172a; }
+        .project-tech { font-size: 0.85rem; color: #2563eb; font-weight: 600; background: #f0f9ff; padding: 4px 10px; border-radius: 6px; border: 1px solid #bae6fd; }
+        .project-list { list-style: none; padding-left: 0; }
+        .project-list li { position: relative; padding-left: 20px; color: #334155; margin-bottom: 8px; font-size: 0.95rem; line-height: 1.6; }
+        .project-list li::before { content: "•"; position: absolute; left: 6px; color: #2563eb; font-weight: bold; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+        .service-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 20px; }
+        .service-card h4 { font-size: 1rem; font-weight: 700; color: #0f172a; margin-bottom: 8px; }
+        .contact-box { background: #0f172a; color: #ffffff; border-radius: 16px; padding: 40px 32px; text-align: center; }
+        .contact-box h3 { font-size: 1.6rem; margin-bottom: 12px; font-weight: 700; }
+        .contact-box p { font-size: 1.05rem; color: #94a3b8; margin-bottom: 24px; }
+        .phone-btn { display: inline-block; background: #2563eb; color: #ffffff; padding: 14px 32px; border-radius: 8px; font-weight: 700; font-size: 1.1rem; text-decoration: none; transition: background 0.2s; }
+        .phone-btn:hover { background: #1d4ed8; }
     </style>
 </head>
 <body>
-<!--容器-->
-    <div id="wrapper">
-<!--顶部-->
-        <div class="top-wrap">
-<!--            版心-->
-            <div class="top-wrapmain">
-                <!--            左侧-->
-                <div class="left">
-                    <div>
-                        <h1>个人简历</h1>
-                        <h3>求职意向：web前端开发</h3>
-                    </div>
-                </div>
-                <!--            右侧-->
-                <div class="right">
-                    <div>
-                        <p>
-                            <sapn class="iconfont">&#xe787;</sapn>
-                            18379255592
-                        </p>
-                        <p>
-                            <span class="iconfont">&#xe66f;</span>
-                            1764460248@qq.com
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-
+    <div class="top-bar">
+        <div class="brand">
+            <span id="txt-brand-name">全栈开发与技术接单</span>
+            <span class="brand-badge">Senior Engineer</span>
         </div>
-<!--        基本资料-->
-        <div class="info-wraper">
-<!--            左边梯形-->
-            <div class="left-tx">
-                基本资料
-            </div>
-<!--            右边梯形-->
-            <div class="right-tx">
-            </div>
-<!--            基本信息-->
-            <div class="base-info">
-                <ul class="r">
-                    <li>姓名：</li>
-                    <li>出生年月：</li>
-                    <li>性别：</li>
-                </ul>
-                <ul class="l">
-                    <li>籍贯：</li>
-                    <li>学历：</li>
-                </ul>
-            </div>
-        </div>
-<!--       寸照-->
-        <div class="img">
-            <img style="width: 166px" src="./image/1.jpg" alt="">
-        </div>
-<!--        项目经历-->
-        <div class="item-experience">
-            <!--            左边梯形-->
-            <div class="left-tx">
-                项目经历
-            </div>
-            <!--            右边梯形-->
-            <div class="right-tx">
-            </div>
-            <!--            项目经历-->
-            <div class="experience">
-                <h2>项目一：</h2>
-                <h3>项目名称：公司官网前端开发</h3>
-                <span style="font-weight: bold">项目描述:</span><p>是一个信息发布平台，用户可以发布自己公司的业务。有等保测评，渗透测试，风险管理等多个模块，用户可以进入想要咨询的模块中，查看该模块公司的具体业务和信息，用户可以在个人中心查看已咨询项目</p>
-                <span style="font-weight: bold">技术要点:</span><p>1、使用vue2，VueRouter,elementUI,axios技术栈
-                2、按照ui设计图修改elementUI自带样式，主要使用flex布局</p>
-                <h2>项目二：</h2>
-                <h3>项目名称：尚品汇</h3>
-                <span style="font-weight: bold">项目描述</span><p>尚品汇是一款基于京东模式的购物平台，以顾客模式为主，基于此模式提供商品购买，手机充值等业务功能</p>
-                <span style="font-weight: bold">技术要点</span><p>1、主要使用了vue框架，使用vue-cli脚手架搭建项目框架
-                2、封装组件，减少代码冗余
-                3、登录页面采用vee-validate表单结合正则表达式实现登录账号验证</p>
-            </div>
-        </div>
-<!--        开发技能-->
-        <div class="art-wrapper">
-            <!--            左边梯形-->
-            <div class="left-tx">
-                开发技能
-            </div>
-            <!--            右边梯形-->
-            <div class="right-tx">
-            </div>
-            <!--            开发技能-->
-            <div class="art">
-                <ul>
-                    <li>  <i class="iconfont">&#xe613;</i> 熟悉HTML、CSS、JavaScript，了解ES6语法，了解H5、CSS3新属性</li>
-                    <li>  <i class="iconfont">&#xe613;</i> 熟悉Vue、VueRouter、@Vue/cli、ElementUIAxios等相关技术</li>
-                    <li>  <i class="iconfont">&#xe613;</i> 熟悉组件间的通信和数据管理，熟练使用Vuex</li>
-                </ul>
-            </div>
-        </div>
-<!--        自我评价-->
-        <div class="evaluate-wrapper">
-            <!--            左边梯形-->
-            <div class="left-tx">
-                自我评价
-            </div>
-            <!--            右边梯形-->
-            <div class="right-tx">
-            </div>
-            <!--            自我评价-->
-            <div class="evaluate">
-                <ul>
-                    <li>1.本人思想端正，积极向上，对新鲜事物接受能力强，注重长期稳定的发展机会</li>
-                    <li>2.对工作充满热情，热爱技术，经常阅读技术文章、博客</li>
-                    <li>3.有较强的自学能力和团队合作交流能力</li>
-                </ul>
-            </div>
-        </div>
-<!--        底部框-->
-        <div class="bottom">
+        <div class="lang-switch">
+            <button class="lang-btn" id="btn-zh" onclick="switchLanguage('zh')">中文 🇨🇳</button>
+            <button class="lang-btn" id="btn-en" onclick="switchLanguage('en')">English 🇺🇸</button>
         </div>
     </div>
+
+    <div class="container">
+        <div class="hero">
+            <h1 id="hero-title">💻 个人介绍与技术接单简介</h1>
+            <p id="hero-desc">
+                全栈开发 / 潮玩盲盒&电商平台 / 跨境贸易合规系统 / 独立站建站 / 小程序&UniApp / 爬虫&DevOps 资深工程师。拥有丰富的高并发黑石潮玩&一番赏/PK赏盲盒平台、跨境贸易合规系统 (TCSS)、高质感响应式网站与多语言独立站搭建、微信小程序/UniApp跨端应用、高防逆向爬虫（Cloudflare 5秒盾突破）及服务器 DevOps 运维实战经验。技术全面，独立交付能力强。
+            </p>
+        </div>
+
+        <div class="section-card">
+            <div class="section-title">
+                <span>🛠️</span>
+                <span id="st-tech">全维度技术栈</span>
+            </div>
+            <div class="tech-grid" id="tech-container"></div>
+        </div>
+
+        <div class="section-card">
+            <div class="section-title">
+                <span>🚀</span>
+                <span id="st-projects">核心实战项目案例</span>
+            </div>
+            <div id="projects-container"></div>
+        </div>
+
+        <div class="section-card">
+            <div class="section-title">
+                <span>📋</span>
+                <span id="st-services">承接业务范围</span>
+            </div>
+            <div class="services-grid" id="services-container"></div>
+        </div>
+
+        <div class="section-card">
+            <div class="section-title">
+                <span>🌟</span>
+                <span id="st-advantages">合作优势</span>
+            </div>
+            <div class="project-list" id="advantages-container"></div>
+        </div>
+
+        <div class="contact-box">
+            <h3 id="contact-title">🤝 欢迎随时联系洽谈</h3>
+            <p id="contact-desc">支持快速需求评估与定制化开发方案，高效率独立交付！</p>
+            <a href="tel:15679278551" class="phone-btn" id="phone-btn-txt">📞 联系电话: 15679278551</a>
+        </div>
+    </div>
+
+    <script>
+        const i18n = {
+            zh: {
+                brandName: '全栈开发与技术接单',
+                heroTitle: '💻 个人介绍与技术接单简介',
+                heroDesc: '全栈开发 / 潮玩盲盒&电商平台 / 跨境贸易合规系统 / 独立站建站 / 小程序&UniApp / 爬虫&DevOps 资深工程师。拥有丰富的高并发黑石潮玩&一番赏/PK赏盲盒平台、跨境贸易合规系统 (TCSS)、高质感响应式网站与多语言独立站搭建、微信小程序/UniApp跨端应用、高防逆向爬虫（Cloudflare 5秒盾突破）及服务器 DevOps 运维实战经验。技术全面，独立交付能力强。',
+                stTech: '全维度技术栈',
+                stProjects: '核心实战项目案例',
+                stServices: '承接业务范围',
+                stAdvantages: '合作优势',
+                contactTitle: '🤝 欢迎随时联系洽谈',
+                contactDesc: '支持快速需求评估与定制化开发方案，高效率独立交付！',
+                phoneBtn: '📞 联系电话: 15679278551',
+                techStack: [
+                    { title: '潮玩盲盒 & 娱乐电商', tags: ['一番赏抽赏', 'PK赏与组队抽赏', '概率公示与限量规则', '抽赏动画与高精UI', '二级市场交易'] },
+                    { title: '跨境贸易合规审查', tags: ['TCSS 合规平台', '全球企业风险筛查', 'HSCode 编码与关税', '出口管制与名单穿透'] },
+                    { title: '网站开发与独立站', tags: ['Vue 3', 'React', 'Vite', 'SSR 服务端渲染', 'Nuxt', '多语言自动化生成', 'Axure 复刻'] },
+                    { title: '小程序 & 跨端移动开发', tags: ['UniApp', '微信小程序', '支付宝小程序', '移动端 H5', '高德地图 API', 'Element Plus'] },
+                    { title: '高难度爬虫与反爬', tags: ['Cloudflare 5秒盾绕过', 'CloakBrowser', 'Playwright', 'Selenium', 'PDF 自动化解析'] },
+                    { title: '移动端 & Web RPA', tags: ['ADB', 'DOM 节点偏移量定位', '坐标网格校准', '视觉存证', 'Excel 数据落盘'] },
+                    { title: '后端开发与 DevOps', tags: ['Python', 'Gunicorn', 'Flask', 'FastAPI', 'Docker', 'Docker Compose', 'Linux SSH 运维'] },
+                    { title: 'AI & 智能体应用', tags: ['Gemini API', 'Kimi API', 'LLM 工作流集成', 'NLP 人名识别模型'] }
+                ],
+                projects: [
+                    {
+                        title: '1. 黑石潮玩 & 一番赏 / PK赏盲盒电商平台',
+                        tech: 'UniApp + Vue 3 + 像素级复刻 + 高并发后端 API',
+                        bullets: [
+                            '一番赏/常规赏品抽赏：研发一番赏抽赏详情页、无限滚动赏品预览、概率公示及开箱存证；实现单发限制与规则校验。',
+                            'PK赏与组队抽赏机制：设计 PK 赏卡片界面、发起组队/多人组队抽赏交互、宝箱特效与中奖历史记录。',
+                            '高精 UI 与动画体验：根据设计图切图进行高保真复刻，解决浮动层、刷新粘性、背景透穿及响应式间距问题。'
+                        ]
+                    },
+                    {
+                        title: '2. 大型跨境贸易合规审查与海关系统 (TCSS)',
+                        tech: 'Vue 3 + Element Plus + Vite + SSR + Python/Node',
+                        bullets: [
+                            '全球企业实体合规审查：开发全球企业风控筛查系统，支持企业实体类型、股权穿透、注册资本及高风险控制人过滤。',
+                            'HSCode 海关编码查询：研发中国/国际海关 HSCode 编码快速检索与映射转换模块，精准匹配关税及管制提示。',
+                            '合规 SSR 服务端构建：解决大型合规平台在 SSR 渲染下的打包与按需导入优化，确保高并发查询流畅稳定。'
+                        ]
+                    },
+                    {
+                        title: '3. 响应式门户网站与多语言独立站建站系统',
+                        tech: 'Vue 3 / React + Nuxt/Next + HTML5/CSS3 + 多语言脚本',
+                        bullets: [
+                            '高质量响应式建站：擅长将 Axure / Figma 高保真设计图像素级复刻为现代化网站，支持 PC/移动端自适应布局。',
+                            '多语言自动化拓展：编写自动化脚本组件，支持多语种独立站页面的批量一键生成、SEO 标签优化与离线/在线打包交付。'
+                        ]
+                    },
+                    {
+                        title: '4. UniApp / 微信小程序 & 移动端智能监管定位系统',
+                        tech: 'UniApp + Vue 3 + TailwindCSS + 高德地图 API',
+                        bullets: [
+                            '对接高德地图高精度地理定位与逆地理编码，实现考勤打卡、动态路由防守及多角色权限（局长/组长/联络员）控制。'
+                        ]
+                    },
+                    {
+                        title: '5. 高防 Cloudflare 盾突破与法律/海关文件自动化下载系统',
+                        tech: 'CloakBrowser + Playwright + Scrapling + PDF 解析',
+                        bullets: [
+                            '成功绕过国际法院 (ICJ)、欧亚经济联盟 (EEC-EAEU) 等站点的 Cloudflare 高强度防爬与 CF 验证机制，批量解析海关/法律 PDF 文本。'
+                        ]
+                    },
+                    {
+                        title: '6. Android 业务数据全流程 RPA 自动化采集系统',
+                        tech: 'ADB + DOM 树偏移量提取 (Node Offset) + 截图存证',
+                        bullets: [
+                            '自动化连接移动设备，利用 Node Offset 算法解决渲染延时带来的 DOM 节点错位问题，实现数据精准抓取与自动截图存证。'
+                        ]
+                    },
+                    {
+                        title: '7. AI 大模型 API 集成与 NLP 实体识别系统',
+                        tech: 'Gemini API + Kimi API + NLP 智能模型',
+                        bullets: [
+                            '将 Gemini / Kimi API 深度接入自动化任务链，结合 NLP 模型高效提取公开文本中的中文人名实体与关联信息。'
+                        ]
+                    },
+                    {
+                        title: '8. 高并发后端 API 与服务器 DevOps 一键运维工具',
+                        tech: 'Python (Gunicorn/Flask) + Docker Compose + SSH 脚本',
+                        bullets: [
+                            '编写一键部署与守护脚本（如 nohup uv run gunicorn 守护管理），实现服务无缝重启与自动化巡检。'
+                        ]
+                    }
+                ],
+                services: [
+                    { title: '潮玩盲盒 / 娱乐电商系统', desc: '一番赏抽赏系统、PK赏/组队抽赏、概率公示、盲盒商城、二手交易平台。' },
+                    { title: '跨境贸易合规 / 行业软件', desc: 'TCSS 贸易合规审查平台、全球企业风控筛查、HSCode 海关编码工具、进出口风控大屏。' },
+                    { title: '网站开发与多语言独立站', desc: '企业官网、响应式门户网站、独立站定制、多语言自动化建站、Axure/Figma 高保真复刻。' },
+                    { title: '小程序 / UniApp 跨端应用', desc: '微信小程序、支付宝小程序、移动端 H5 开发、地图定位与考勤系统。' },
+                    { title: '高难度爬虫与反爬突破', desc: 'Cloudflare 验证码突破、网页&App 数据提取、批量 PDF/文档解析落盘。' },
+                    { title: 'RPA / 自动化流程定制', desc: 'Android / iOS 自动化脚本、网页自动化挂机、表单批量填报。' },
+                    { title: 'DevOps / 后端服务部署', desc: 'Linux 运维、Docker 容器化、服务器配置与自动化脚本编写。' }
+                ],
+                advantages: [
+                    '✅ 业务与技术兼备：不仅懂全栈与爬虫技术，更深入理解潮玩盲盒/电商抽赏、跨境贸易合规及企业风控等复杂业务场景。',
+                    '✅ 全流程独立交付：独立覆盖前端 Vue/UniApp/SSR/小程序、后端 API、爬虫逆向到服务器运维的全套流程。',
+                    '✅ 高质量与高还原度：精通流式响应式布局，像素级还原设计图，代码结构清晰，提供后续长期维护支持。'
+                ]
+            },
+            en: {
+                brandName: 'Full-Stack Development & Services',
+                heroTitle: '💻 Portfolio & Technical Services Overview',
+                heroDesc: 'Senior Engineer specializing in Full-Stack Web Development, Blind Box & Entertainment E-Commerce Platforms, Cross-Border Trade Compliance Systems (TCSS), Multi-Language Independent Sites, UniApp / WeChat Mini-Programs, High-Defense Web Scraping (Cloudflare Bypass), and Server DevOps. High efficiency with full end-to-end independent delivery capability.',
+                stTech: 'Comprehensive Tech Stack',
+                stProjects: 'Core Project Case Studies',
+                stServices: 'Service Scope & Solutions',
+                stAdvantages: 'Core Advantages',
+                contactTitle: '🤝 Open for Inquiries & Consultation',
+                contactDesc: 'Fast requirement evaluation, custom solution design, and reliable independent delivery!',
+                phoneBtn: '📞 Phone / Contact: +86 15679278551',
+                techStack: [
+                    { title: 'Trendy Blind Box & E-Commerce', tags: ['Ichiban Kuji System', 'PK & Team Drawing', 'Probability Rules', 'Gacha Animation', 'Secondary Trading'] },
+                    { title: 'Trade Compliance & Risk Control', tags: ['TCSS Platform', 'Global Entity Screening', 'HSCode Tariff Tool', 'Sanction List Detection'] },
+                    { title: 'Web Development & Custom Sites', tags: ['Vue 3', 'React', 'Vite', 'SSR', 'Nuxt', 'Auto Multi-Lang Generation', 'Axure Pixel Replic'] },
+                    { title: 'Mini-Programs & Cross-Platform', tags: ['UniApp', 'WeChat Mini-Program', 'Alipay App', 'Mobile H5', 'AMap API', 'Element Plus'] },
+                    { title: 'Advanced Web Scraping & Reverse', tags: ['Cloudflare 5s Bypass', 'CloakBrowser', 'Playwright', 'Selenium', 'PDF Auto-Parser'] },
+                    { title: 'Mobile & Web RPA Automation', tags: ['ADB', 'DOM Node Offset Algorithm', 'Coordinate Calibration', 'Proof Recording', 'Excel Export'] },
+                    { title: 'Backend & DevOps Infrastructure', tags: ['Python', 'Gunicorn', 'Flask', 'FastAPI', 'Docker', 'Docker Compose', 'Linux SSH'] },
+                    { title: 'AI & Smart Agent Application', tags: ['Gemini API', 'Kimi API', 'LLM Workflow Integration', 'NLP Entity Extraction'] }
+                ],
+                projects: [
+                    {
+                        title: '1. Heishi Blind Box & Ichiban Kuji E-Commerce Platform',
+                        tech: 'UniApp + Vue 3 + Pixel-Perfect UI + High-Concurrency API',
+                        bullets: [
+                            'Ichiban Kuji Drawing System: Developed detailed drawing views, infinite preview, probability disclosure, and anti-fraud proof logs.',
+                            'PK & Group Drawing Mechanism: Designed interactive PK cards, multi-user group drawings, chest opening effects, and winning logs.',
+                            'High-Precision UI & Animation: Pixel-perfect design replication, resolving floating layers, sticky refreshing, and responsive spacing.'
+                        ]
+                    },
+                    {
+                        title: '2. Global Trade Compliance & Customs System (TCSS)',
+                        tech: 'Vue 3 + Element Plus + Vite + SSR + Python/Node',
+                        bullets: [
+                            'Global Entity Risk Screening: Built enterprise risk control platform supporting entity filtering, equity penetration, and control person checks.',
+                            'HSCode Customs Tariff Tool: Built rapid HSCode lookup and mapping converter matching export tariffs and regulation alerts.',
+                            'SSR Server Optimization: Resolved complex SSR bundling and tree-shaking for high-concurrency compliance queries.'
+                        ]
+                    },
+                    {
+                        title: '3. Responsive Corporate Portals & Multi-Language Independent Sites',
+                        tech: 'Vue 3 / React + Nuxt/Next + HTML5/CSS3 + Auto i18n Script',
+                        bullets: [
+                            'High-Quality Responsive Sites: Pixel-perfect transformation from Axure / Figma designs to modern responsive sites.',
+                            'Automated Multi-Language Expansion: Created automation components supporting batch generation of multi-lingual sites and SEO optimization.'
+                        ]
+                    },
+                    {
+                        title: '4. UniApp / WeChat Mini-Program Smart Supervision & Positioning',
+                        tech: 'UniApp + Vue 3 + TailwindCSS + AMap API',
+                        bullets: [
+                            'Integrated high-precision AMap geolocation and reverse geocoding for attendance check-ins, dynamic routing, and role-based permissions.'
+                        ]
+                    },
+                    {
+                        title: '5. High-Defense Cloudflare Bypass & Automated Legal PDF Downloader',
+                        tech: 'CloakBrowser + Playwright + Scrapling + PDF Parser',
+                        bullets: [
+                            'Successfully bypassed Cloudflare 5-second shields on ICJ and EEC-EAEU websites, automatically downloading and parsing legal PDFs.'
+                        ]
+                    },
+                    {
+                        title: '6. Android Data Collection RPA System',
+                        tech: 'ADB + DOM Node Offset Position + Proof Capture',
+                        bullets: [
+                            'Automated Android device connections using Node Offset algorithms to eliminate rendering delays and capture accurate proof snapshots.'
+                        ]
+                    },
+                    {
+                        title: '7. AI LLM API Integration & NLP Entity Recognition',
+                        tech: 'Gemini API + Kimi API + NLP Model',
+                        bullets: [
+                            'Deeply integrated Gemini and Kimi APIs into automated workflows combined with NLP models to extract Chinese name entities.'
+                        ]
+                    },
+                    {
+                        title: '8. High-Concurrency Backend API & DevOps Automation',
+                        tech: 'Python (Gunicorn/Flask) + Docker Compose + SSH Scripts',
+                        bullets: [
+                            'Created one-click deployment and daemon scripts ensuring seamless service restarts and automated server health inspections.'
+                        ]
+                    }
+                ],
+                services: [
+                    { title: 'Blind Box & E-Commerce Systems', desc: 'Ichiban Kuji, PK group drawing, probability disclosure, blind box marketplace, second-hand trading.' },
+                    { title: 'Trade Compliance & Customs Software', desc: 'TCSS platform, global entity screening, HSCode tools, import/export risk dashboards.' },
+                    { title: 'Websites & Multi-Language Sites', desc: 'Corporate portals, responsive websites, custom independent sites, Figma/Axure replication.' },
+                    { title: 'Mini-Programs & Cross-Platform Apps', desc: 'WeChat & Alipay mini-programs, mobile H5, geolocation check-in systems.' },
+                    { title: 'High-Difficulty Web Scraping', desc: 'Cloudflare bypass, web & App data extraction, batch PDF/document parsing.' },
+                    { title: 'RPA & Automation Customization', desc: 'Android / iOS automation scripts, web task automation, batch form filling.' },
+                    { title: 'DevOps & Server Deployment', desc: 'Linux maintenance, Docker containerization, server config, and bash automation.' }
+                ],
+                advantages: [
+                    '✅ Business & Technical Expertise: In-depth understanding of blind box e-commerce, trade compliance, and enterprise risk control.',
+                    '✅ End-to-End Independent Delivery: Independent coverage from Vue/UniApp frontend, backend APIs, web scraping to DevOps.',
+                    '✅ High Quality & Pixel-Perfect Precision: Expert in responsive fluid layouts, clean code structure, and long-term support.'
+                ]
+            }
+        };
+
+        function detectLanguage() {
+            const saved = localStorage.getItem('user_lang');
+            if (saved === 'zh' || saved === 'en') return saved;
+            const navLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+            return navLang.startsWith('zh') ? 'zh' : 'en';
+        }
+
+        function render(lang) {
+            const data = i18n[lang];
+            document.getElementById('txt-brand-name').textContent = data.brandName;
+            document.getElementById('hero-title').textContent = data.heroTitle;
+            document.getElementById('hero-desc').textContent = data.heroDesc;
+            document.getElementById('st-tech').textContent = data.stTech;
+            document.getElementById('st-projects').textContent = data.stProjects;
+            document.getElementById('st-services').textContent = data.stServices;
+            document.getElementById('st-advantages').textContent = data.stAdvantages;
+            document.getElementById('contact-title').textContent = data.contactTitle;
+            document.getElementById('contact-desc').textContent = data.contactDesc;
+            document.getElementById('phone-btn-txt').textContent = data.phoneBtn;
+
+            document.getElementById('btn-zh').classList.toggle('active', lang === 'zh');
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+
+            const techContainer = document.getElementById('tech-container');
+            techContainer.innerHTML = data.techStack.map(item => `
+                <div class="tech-item">
+                    <h4>${item.title}</h4>
+                    <div class="tech-tags">
+                        ${item.tags.map(t => `<span class="tag">${t}</span>`).join('')}
+                    </div>
+                </div>
+            `).join('');
+
+            const projectsContainer = document.getElementById('projects-container');
+            projectsContainer.innerHTML = data.projects.map(p => `
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title">${p.title}</div>
+                        <div class="project-tech">${p.tech}</div>
+                    </div>
+                    <ul class="project-list">
+                        ${p.bullets.map(b => `<li>${b}</li>`).join('')}
+                    </ul>
+                </div>
+            `).join('');
+
+            const servicesContainer = document.getElementById('services-container');
+            servicesContainer.innerHTML = data.services.map(s => `
+                <div class="service-card">
+                    <h4>${s.title}</h4>
+                    <p style="font-size:0.875rem; color:#475569;">${s.desc}</p>
+                </div>
+            `).join('');
+
+            const advantagesContainer = document.getElementById('advantages-container');
+            advantagesContainer.innerHTML = data.advantages.map(a => `<li>${a}</li>`).join('');
+        }
+
+        function switchLanguage(lang) {
+            localStorage.setItem('user_lang', lang);
+            render(lang);
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const currentLang = detectLanguage();
+            render(currentLang);
+        });
+    </script>
 </body>
 </html>
